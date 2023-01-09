@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой сайт портфолио Леонтьев Антон</title>
+
+  <!-- Display the page at 100% scale -->
+  <meta name="viewport" content="width=device-width", initial-scale=1>
+
+  <!-- Normalize styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+  <!-- My styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Сonnecting web-fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=PT+Sans+Caption:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.png">
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  
+  <!-- HEADER start -->
+
+  <div class="header">
+
+    <div class="header__title">Леонтьев Антон</div>
+    <div class="header__slogan">Верстка сайтов для вашего бизнеса<br> HTML5 CSS3 JavaScript React Redux</div>
+    <div class="header__arrow" id="arrow">
+      <a href="#portfolio"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
+
+  </div>
+
+  <!-- HEADER end -->
+
+
+
+  <!-- PORTFOLIO start -->
+
+   <div class="portfolio" id="portfolio">
+
+    <div class="container">
+
+      <div class="title">
+        Портфолио
+      </div>
+
+      <div class="row">
+
+        <!-- Work in portfolio I start -->
+
+       <div class="col-4">
+        <div class="portfolio-item">
+          <div class="portfolio-item__img">
+            <img src="img/portfolio/project-1.jpg" width="360" height="250" alt="Макет I">
+          </div>
+          <div class="portfolio-item__title">
+            <a href="#!">Макет I</a>
+          </div>
+          <div class="portfolio-item__text">
+            <p>Описание макета I</p>
+          </div>
+        </div>
+       </div>
+
+        <!-- Work in portfolio I end -->
+
+
+        <!-- Work in portfolio II start -->
+
+        <div class="col-4">
+          <div class="portfolio-item">
+            <div class="portfolio-item__img">
+              <img src="img/portfolio/project-2.jpg" width="360" height="250" alt="Макет II">
+            </div>
+            <div class="portfolio-item__title">
+              <a href="#!">Макет II</a>
+            </div>
+            <div class="portfolio-item__text">
+              <p>Описание макета II</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work in portfolio II end -->
+
+
+        <!-- Work in portfolio III start -->
+
+        <div class="col-4">
+          <div class="portfolio-item">
+            <div class="portfolio-item__img">
+              <img src="img/portfolio/project-3.jpg" width="360" height="250" alt="Личный сайт портфолио">
+            </div>
+            <div class="portfolio-item__title">
+              <a href="#!">Личный сайт портфолио</a>
+            </div>
+            <div class="portfolio-item__text">
+              <p>Верстка личного сайта на котором вы сейчас находитесь</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work in portfolio III end -->
+
+      </div>
+      
+    </div>
+
+   </div>
+
+  <!-- PORTFOLIO end -->
+
+
+  <!-- FOOTER start -->
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-4">
+          <p class="footer__name">© Леонтьев Антон</p>
+          <p>Верстка и разработка сайтов</p>
+        </div>
+
+        <div class="col-4">
+          <p class="footer__social">Мои профили в социальных сетях:</p>
+          <p class="footer__social-icons">
+            <a href="https://vk.com/leontyevx1" target="_blank">
+              <i class="fa fa-vk" aria-hidden="true"></i>
+            </a>
+            <a href="https://t.me/leontyevx1" target="_blank">
+            <i class="fa fa-telegram" aria-hidden="true"></i>
+            </a>     
+          </p>
+        </div>
+
+        <div class="col-4">
+          <div><a href="https://vk.com/leontyevx1" class="button" target="_blank">связаться Вконтакте</a></div>
+          <p>Напишите мне, чтобы заказать или узнать<br> стоимость верстки вашего проекта</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <!-- FOOTER end -->
+
+
+  <!-- Scroll start -->
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+       $("#arrow").on("click","a", function (event) {
+           event.preventDefault();
+           var id  = $(this).attr('href'),
+               top = $(id).offset().top;
+           $('body,html').animate({scrollTop: top}, 600);
+       });
+   });
+   </script>
+
+   <!-- Scroll end -->
+
+
+</body>
+</html>
